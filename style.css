@@ -133,6 +133,7 @@ nav {
 
 .cards-solucoes {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 32px;
 }
@@ -1203,6 +1204,136 @@ body::-webkit-scrollbar-thumb {
 
 /*Responsividade*/
 
+
+/* Media Queries para responsividade */
+@media screen and (max-width: 1024px) {
+    .container {
+        padding: 10px;
+    }
+
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .texto-explicacao-sobre-nos {
+        padding: 20px;
+    }
+
+    .texto-explicacao-sobre-nos h2 {
+        font-size: 22px;
+    }
+
+    .texto-explicacao-sobre-nos p {
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 1031px){
+    .cards-solucoes {
+        flex-wrap: wrap;
+    }
+
+    .cards-solucoes-1,
+    .cards-solucoes-2,
+    .cards-solucoes-3,
+    .cards-solucoes-4 {
+        width: 45%;
+        margin: 0 auto;
+    }
+
+    .button-solucoes-1,
+    .button-solucoes-2,
+    .button-solucoes-3,
+    .button-solucoes-4 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 1024px) {
+    .cards-solucoes {
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    .cards-solucoes-1,
+    .cards-solucoes-2,
+    .cards-solucoes-3,
+    .cards-solucoes-4 {
+        width: 45%;
+        margin: 0 auto;
+    }
+
+    .button-solucoes-1,
+    .button-solucoes-2,
+    .button-solucoes-3,
+    .button-solucoes-4 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .blog {
+        flex-direction: column;
+        padding: 30px;
+        width: 100%;
+
+    }
+
+    .box-h1 {
+        max-width: 100%;
+    }
+
+    .cards-blog {
+        max-width: 100%;
+    }
+
+    .card-blog-1,
+    .card-blog-2 {
+        max-width: 100%;
+    }
+
+    .elemento-box-preto {
+        margin-top: 400px;
+    }
+
+
+    .titulo-trabalheConosco h1 {
+        font-size: 50px;
+        margin-left: 10px;
+    }
+
+    .titulo-trabalheConosco {
+        margin-left: 20px;
+    }
+
+    .cards-trabalheConosco {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        padding: 0 20px;
+    }
+
+    .cards1,
+    .cards2 {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .card {
+        width: 90%;
+        height: auto;
+    }
+
+    .cards-cyberArena {
+        max-width: 300px;
+    }
+}
+
+
+
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
@@ -1215,28 +1346,7 @@ body::-webkit-scrollbar-thumb {
         order: -1;
         margin-bottom: 20px;
     }
-}
 
-
-/* Media Queries para responsividade */
-@media screen and (max-width: 1024px) {
-    .container {
-        padding: 10px;
-    }
-
-    .flex-container {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-@media (max-width: 480px){
-    .titulo-sobre-nos h1{
-        font-size: 30px;
-    }
-}
-
-@media (max-width: 768px) {
     .box-header {
         padding-top: 300px;
     }
@@ -1267,32 +1377,7 @@ body::-webkit-scrollbar-thumb {
         width: 140px;
         height: 36px;
     }
-}
 
-@media (max-width: 1024px) {
-    .cards-solucoes {
-        flex-wrap: wrap;
-        gap: 24px;
-    }
-
-    .cards-solucoes-1,
-    .cards-solucoes-2,
-    .cards-solucoes-3,
-    .cards-solucoes-4 {
-        width: 45%;
-        margin: 0 auto;
-    }
-
-    .button-solucoes-1,
-    .button-solucoes-2,
-    .button-solucoes-3,
-    .button-solucoes-4 {
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-@media (max-width: 768px) {
     .cards-solucoes {
         flex-direction: column;
         align-items: center;
@@ -1323,31 +1408,7 @@ body::-webkit-scrollbar-thumb {
     .button-solucoes-4 {
         margin: 20px auto 10px auto;
     }
-}
 
-@media (max-width: 480px) {
-
-    .cards-solucoes-1,
-    .cards-solucoes-2,
-    .cards-solucoes-3,
-    .cards-solucoes-4 {
-        width: 100%;
-    }
-
-    .cards-solucoes p {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    .solucoes {
-        width: 95%;
-    }
-}
-
-
-
-
-@media (max-width: 768px) {
     .seguranca {
         flex-direction: column;
         align-items: center;
@@ -1372,10 +1433,7 @@ body::-webkit-scrollbar-thumb {
         margin-left: auto;
         margin-right: auto;
     }
-}
 
-
-@media (max-width: 768px) {
     .explicacao-sobre-nos {
         flex-direction: column;
         height: auto;
@@ -1407,38 +1465,8 @@ body::-webkit-scrollbar-thumb {
     .destaque {
         font-size: 28px;
     }
-}
 
-/*blog*/
 
-/* Media Queries para telas menores */
-
-@media (max-width: 1024px) {
-    .blog {
-        flex-direction: column;
-        padding: 30px;
-        margin-left: 20px;
-    }
-
-    .box-h1 {
-        max-width: 100%;
-    }
-
-    .cards-blog {
-        max-width: 100%;
-    }
-
-    .card-blog-1,
-    .card-blog-2 {
-        max-width: 100%;
-    }
-
-    .elemento-box-preto {
-        margin-top: 400px;
-    }
-}
-
-@media (max-width: 768px) {
     .blog {
         flex-direction: column;
         padding: 20px;
@@ -1489,64 +1517,7 @@ body::-webkit-scrollbar-thumb {
     .elemento-box-preto {
         margin-top: 100px;
     }
-}
 
-@media (max-width: 480px) {
-
-    .blog{
-        margin-top: 10px;
-    }
-    .box-h1 h1 {
-        font-size: 20px;
-
-    }
-
-    .card-blog-1, .card-blog-2 img{
-        height: 100%;
-    }
-
-    .card-blog-1,
-    .card-blog-2 {
-        max-width: 100%;
-    }
-
-    .card-blog-1 h2,
-    .card-blog-2 h2 {
-        font-size: 15px;
-    }
-
-
-    .card-blog-1 p,
-    .card-blog-2 p {
-        font-size: 15px;
-    }
-
-    .card-blog-1{
-        height: 100%;
-    }
-
-    .elemento-box-preto {
-        margin-top: 500px;
-    }
-}
-
-
-
-/*Titulo trabalhe conosco*/
-
-@media (max-width: 1024px) {
-    .titulo-trabalheConosco h1 {
-        font-size: 50px;
-        margin-left: 10px;
-    }
-
-    .titulo-trabalheConosco {
-        margin-left: 20px;
-    }
-}
-
-
-@media (max-width: 768px) {
     .titulo-trabalheConosco {
         width: 100%;
         height: auto;
@@ -1571,44 +1542,8 @@ body::-webkit-scrollbar-thumb {
         width: 200px;
         height: auto;
     }
-}
-
-@media (max-width: 480px) {
-    .titulo-trabalheConosco h1 {
-        font-size: 40px;
-    }
-}
 
 
-
-/*cards cyber arena*/
-
-@media (max-width: 1024px) {
-    .cards-trabalheConosco {
-        flex-direction: column;
-        align-items: center;
-        gap: 24px;
-        padding: 0 20px;
-    }
-
-    .cards1,
-    .cards2 {
-        flex-direction: column;
-        align-items: center;
-        gap: 24px;
-    }
-
-    .card {
-        width: 90%;
-        height: auto;
-    }
-
-    .cards-cyberArena {
-        max-width: 300px;
-    }
-}
-
-@media (max-width: 768px) {
     .cards-trabalheConosco {
         flex-direction: column;
         align-items: center;
@@ -1674,13 +1609,7 @@ body::-webkit-scrollbar-thumb {
     .button-card {
         margin: 0;
     }
-}
 
-
-
-
-/*Footer*/
-@media (max-width: 768px) {
     .footer-content {
         flex-direction: column;
         align-items: center;
@@ -1706,6 +1635,8 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
+
+
 @media (max-width: 480px) {
     .footer-content p {
         font-size: 12px;
@@ -1717,11 +1648,73 @@ body::-webkit-scrollbar-thumb {
         height: 20px;
 
     }
-}
 
-@media (max-width: 480px) {
-  .titulo-parceiros h2 {
-    font-size: 1.2rem;
-    padding: 10px 12px;
-  }
+    .titulo-parceiros h2 {
+        font-size: 1.2rem;
+        padding: 10px 12px;
+    }
+
+    .titulo-trabalheConosco h1 {
+        font-size: 40px;
+    }
+
+    
+    .blog{
+        margin-top: 10px;
+    }
+    .box-h1 h1 {
+        font-size: 20px;
+
+    }
+
+    .card-blog-1, .card-blog-2 img{
+        height: 100%;
+    }
+
+    .card-blog-1,
+    .card-blog-2 {
+        max-width: 100%;
+    }
+
+    .card-blog-1 h2,
+    .card-blog-2 h2 {
+        font-size: 15px;
+    }
+
+
+    .card-blog-1 p,
+    .card-blog-2 p {
+        font-size: 15px;
+    }
+
+    .card-blog-1{
+        height: 100%;
+    }
+
+    .elemento-box-preto {
+        margin-top: 500px;
+    }
+
+
+    .cards-solucoes-1,
+    .cards-solucoes-2,
+    .cards-solucoes-3,
+    .cards-solucoes-4 {
+        width: 100%;
+    }
+
+    .cards-solucoes p {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .solucoes {
+        width: 95%;
+    }
+
+    .titulo-sobre-nos h1{
+        font-size: 30px;
+    }
+
+    
 }
