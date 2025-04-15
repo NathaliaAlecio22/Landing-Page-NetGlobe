@@ -535,7 +535,7 @@ nav {
 .imagem-segurança {
     width: 544px;
     height: 547px;
-    background: url('/img/imagens/offensive-img.jpg') no-repeat center center;
+    background: url('img/imagens/offensive-img.jpg') no-repeat center center;
     background-size: cover;
     /* Ajusta para cobrir toda a área */
 }
