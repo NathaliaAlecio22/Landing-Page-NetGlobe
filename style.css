@@ -48,6 +48,23 @@ nav {
     font-size: 20px;
     font-weight: 400;
     line-height: 100%;
+    position: relative; 
+}
+
+
+.link-nav::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px; 
+    width: 0;
+    height: 2px;
+    background-color: #A200FF; 
+    transition: width 0.3s ease;
+}
+
+.link-nav:hover::after {
+    width: 100%;
 }
 
 
@@ -113,7 +130,8 @@ nav {
     width: 90%;
     max-width: 1120px;
     height: auto;
-    min-height: 79px; /* Mantém um mínimo para evitar distorções */
+    min-height: 79px;
+    /* Mantém um mínimo para evitar distorções */
     position: relative;
     padding: 10px;
     text-align: center;
@@ -126,7 +144,8 @@ nav {
 }
 
 .solucoes h1 {
-    position: absolute;  /* Centraliza sobre os outros elementos */
+    position: absolute;
+    /* Centraliza sobre os outros elementos */
     font-size: 24px;
     font-weight: bold;
     color: #FFFFFF;
@@ -156,6 +175,7 @@ nav {
     filter: invert(1);
 
 }
+
 /*card-1 soluçoes*/
 .cards-solucoes-1 h2 {
     font-size: 16px;
@@ -168,6 +188,7 @@ nav {
     margin-right: 39px;
     text-align: center;
 }
+
 /*card-1 soluçoes*/
 .cards-solucoes-1 p {
     font-size: 14px;
@@ -180,6 +201,7 @@ nav {
     text-align: start;
     line-height: 1.5;
 }
+
 /*card-1 soluçoes*/
 .botao1 {
     margin-top: 40px;
@@ -217,14 +239,16 @@ nav {
 
 .button-solucoes-1 button::before {
     width: 60%;
-    height: 0.8px;  /* Espessura do traço horizontal */
+    height: 0.8px;
+    /* Espessura do traço horizontal */
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
 
 .button-solucoes-1 button::after {
-    width: 0.8px; /* Espessura do traço vertical */
+    width: 0.8px;
+    /* Espessura do traço vertical */
     height: 60%;
     left: 50%;
     top: 50%;
@@ -312,14 +336,16 @@ nav {
 
 .button-solucoes-2 button::before {
     width: 60%;
-    height: 0.8px;  /* Espessura do traço horizontal */
+    height: 0.8px;
+    /* Espessura do traço horizontal */
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
 
 .button-solucoes-2 button::after {
-    width: 0.8px;  /* Espessura do traço vertical */
+    width: 0.8px;
+    /* Espessura do traço vertical */
     height: 60%;
     left: 50%;
     top: 50%;
@@ -535,7 +561,8 @@ nav {
     width: 544px;
     height: 547px;
     background: url('img/imagens/offensive-img.jpg') no-repeat center center;
-    background-size: cover; /* Ajusta para cobrir toda a área */
+    background-size: cover;
+    /* Ajusta para cobrir toda a área */
 }
 
 .texto-seguraça {
@@ -671,7 +698,8 @@ nav {
     flex: 1;
     min-width: 300px;
     display: flex;
-    align-items: stretch; /* Faz com que a imagem ocupe toda a altura */
+    align-items: stretch;
+    /* Faz com que a imagem ocupe toda a altura */
 }
 
 .imagem-explicacao-sobre-nos img {
@@ -705,7 +733,8 @@ nav {
 
 .titulo-parceiro {
     width: 100%;
-    max-width: 1200px;  /* mesmo limite dos cards, se tiver */
+    max-width: 1200px;
+    /* mesmo limite dos cards, se tiver */
     margin-top: 22px;
     padding: 0 16px;
 
@@ -1068,6 +1097,10 @@ nav {
 
 }
 
+.cards-cyberArena button:hover {
+    background-color: #63397b;
+}
+
 
 
 .candidatar-se {
@@ -1270,7 +1303,7 @@ body::-webkit-scrollbar-thumb {
         margin-right: auto;
     }
 
-    .elemento-black{
+    .elemento-black {
         margin-top: 100px;
     }
 
@@ -2084,7 +2117,7 @@ body::-webkit-scrollbar-thumb {
         height: 100%;
     }
 
-    .elemento-black{
+    .elemento-black {
         margin-top: 500px;
     }
 
@@ -2113,29 +2146,29 @@ body::-webkit-scrollbar-thumb {
 
 @media (min-width: 449px) and (max-width: 470px) {
     .footer-content p {
-        font-size: 11px; 
+        font-size: 11px;
     }
 
     .footer-logo img {
-        max-width: 70px; 
-        height: 18px; 
+        max-width: 70px;
+        height: 18px;
     }
 
     .titulo-parceiros h2 {
-        font-size: 1.1rem; 
-        padding: 8px 10px; 
+        font-size: 1.1rem;
+        padding: 8px 10px;
     }
 
     .titulo-trabalheConosco h1 {
-        font-size: 35px; 
+        font-size: 35px;
     }
 
     .blog {
-        margin-top: 8px; 
+        margin-top: 8px;
     }
 
     .box-h1 h1 {
-        font-size: 18px; 
+        font-size: 18px;
     }
 
     .card-blog-1 h2,
@@ -2145,20 +2178,20 @@ body::-webkit-scrollbar-thumb {
 
     .card-blog-1 p,
     .card-blog-2 p {
-        font-size: 13px; 
+        font-size: 13px;
     }
 
     .cards-solucoes p {
-        margin-left: 8px; 
-        margin-right: 8px; 
+        margin-left: 8px;
+        margin-right: 8px;
     }
 
     .solucoes {
-        width: 90%; 
+        width: 90%;
     }
 
     .titulo-sobre-nos h1 {
-        font-size: 28px; 
+        font-size: 28px;
     }
 }
 
@@ -2288,53 +2321,57 @@ body::-webkit-scrollbar-thumb {
 
     .box-h1 h1 {
         font-size: 24px;
-        text-align: center; 
-    }
-
-    .cards-blog {
-        flex-direction: column; 
-        width: 100%; 
-        gap: 16px; 
-    }
-
-    .card-blog-1, .card-blog-2 {
-        max-width: 100%;
-        height: auto; 
-        padding: 10px; 
-        margin: 0 auto; 
-    }
-
-    .card-blog-1 h2, .card-blog-2 h2 {
-        font-size: 14px; 
-        margin-left: 0; 
         text-align: center;
     }
 
-    .card-blog-1 p, .card-blog-2 p {
-        font-size: 12px; 
-        margin-left: 0; 
-        text-align: center; 
+    .cards-blog {
+        flex-direction: column;
+        width: 100%;
+        gap: 16px;
     }
 
-    .card-blog-1 img, .card-blog-2 img {
-        height: 180px; 
+    .card-blog-1,
+    .card-blog-2 {
+        max-width: 100%;
+        height: auto;
+        padding: 10px;
+        margin: 0 auto;
+    }
+
+    .card-blog-1 h2,
+    .card-blog-2 h2 {
+        font-size: 14px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .card-blog-1 p,
+    .card-blog-2 p {
+        font-size: 12px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .card-blog-1 img,
+    .card-blog-2 img {
+        height: 180px;
     }
 
     .botao-blog {
-        text-align: center; 
-        margin-top: 15px; 
+        text-align: center;
+        margin-top: 15px;
     }
 
     .button-blog {
-        width: 36px; 
-        height: 36px; 
-        margin-left: 0; 
-        margin-right: 0; 
+        width: 36px;
+        height: 36px;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .elemento-black {
         width: 100%;
-        height: 50px; 
+        height: 50px;
         margin-top: 40px;
     }
 }
