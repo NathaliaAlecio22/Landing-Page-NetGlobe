@@ -795,7 +795,7 @@ nav {
     margin-top: 28px;
     font-family: Poppins;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 30 px;
     line-height: 100%;
     letter-spacing: 0%;
     line-height: 1;
@@ -1267,13 +1267,13 @@ body::-webkit-scrollbar-thumb {
 
     .card-blog-1 h2,
     .card-blog-2 h2 {
-        font-size: 15px;
+        font-size: 20px;
     }
 
 
     .card-blog-1 p,
     .card-blog-2 p {
-        font-size: 15px;
+        font-size: 20px;
     }
 
     .button-blog {
@@ -2152,4 +2152,133 @@ body::-webkit-scrollbar-thumb {
     }
 
 
+}
+
+
+@media (max-width: 472px) {
+    .footer-content p {
+        font-size: 12px;
+    }
+
+    .footer-logo img {
+        max-width: 80px;
+        height: 20px;
+    }
+
+    .titulo-parceiros h2 {
+        font-size: 1.2rem;
+        padding: 10px 12px;
+    }
+
+    .titulo-trabalheConosco h1 {
+        font-size: 40px;
+    }
+
+    .blog {
+        margin-top: 10px;
+    }
+
+    .box-h1 h1 {
+        font-size: 20px;
+    }
+
+    .card-blog-1,
+    .card-blog-2 img {
+        height: 100%;
+    }
+
+    .card-blog-1,
+    .card-blog-2 {
+        max-width: 100%;
+    }
+
+    .card-blog-1 h2,
+    .card-blog-2 h2 {
+        font-size: 15px;
+    }
+
+    .card-blog-1 p,
+    .card-blog-2 p {
+        font-size: 15px;
+    }
+
+    .card-blog-1 {
+        height: 100%;
+    }
+
+    .elemento-box-preto {
+        margin-top: 500px;
+    }
+
+    .cards-solucoes-1,
+    .cards-solucoes-2,
+    .cards-solucoes-3,
+    .cards-solucoes-4 {
+        width: 100%;
+    }
+
+    .cards-solucoes p {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .solucoes {
+        width: 95%;
+    }
+
+    .titulo-sobre-nos h1 {
+        font-size: 30px;
+    }
+}
+
+
+@media (min-width: 449px) and (max-width: 470px) {
+    .footer-content p {
+        font-size: 11px; 
+    }
+
+    .footer-logo img {
+        max-width: 70px; 
+        height: 18px; 
+    }
+
+    .titulo-parceiros h2 {
+        font-size: 1.1rem; 
+        padding: 8px 10px; 
+    }
+
+    .titulo-trabalheConosco h1 {
+        font-size: 35px; 
+    }
+
+    .blog {
+        margin-top: 8px; 
+    }
+
+    .box-h1 h1 {
+        font-size: 18px; 
+    }
+
+    .card-blog-1 h2,
+    .card-blog-2 h2 {
+        font-size: 13px;
+    }
+
+    .card-blog-1 p,
+    .card-blog-2 p {
+        font-size: 13px; 
+    }
+
+    .cards-solucoes p {
+        margin-left: 8px; 
+        margin-right: 8px; 
+    }
+
+    .solucoes {
+        width: 90%; 
+    }
+
+    .titulo-sobre-nos h1 {
+        font-size: 28px; 
+    }
 }
